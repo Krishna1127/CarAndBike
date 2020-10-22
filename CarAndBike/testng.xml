@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="UrlTest">
+    <classes>
+     
+      <class name="test.CarNbike.TestSuite.UrlTestBrokenlinks1"/>
+      <class name="test.CarNbike.TestSuite.UrlTestBrokenlinks2"/>
+      <class name="test.CarNbike.TestSuite.UrlTestBrokenlinks3"/>
+      <class name="test.CarNbike.TestSuite.UrlTestBrokenlinks4"/>
+      <class name="test.CarNbike.TestSuite.UrlTestBrokenlinks5"/>
+      <class name="test.CarNbike.TestSuite.UrlTestBrokenlinks6"/>
+     
+              
+    </classes>
+  </test> <!-- UrlTest -->
+</suite> <!-- Suite -->

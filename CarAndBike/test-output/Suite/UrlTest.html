@@ -1,0 +1,499 @@
+<html>
+<head>
+<title>TestNG:  UrlTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>UrlTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>58/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 31 17:46:52 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>5708 seconds (5708306 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks2.teardown()'><b>teardown</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks2</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-PRQ128L&apos;, ip: &apos;192.168.0.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+	at test.CarNbike.TestSuite.UrlTestBrokenlinks2.teardown(UrlTestBrokenlinks2.java:74)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2083777080", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2083777080'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-PRQ128L&apos;, ip: &apos;192.168.0.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+	at test.CarNbike.TestSuite.UrlTestBrokenlinks2.teardown(UrlTestBrokenlinks2.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
+	at org.testng.TestRunner.afterRun(TestRunner.java:853)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks2@11a9e7c8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks3.teardown()'><b>teardown</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks3</td>
+<td></td>
+<td>-1585662720</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks3@3901d134</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks4.teardown()'><b>teardown</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks4</td>
+<td></td>
+<td>-1585662720</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks4@14d3bc22</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks5.teardown()'><b>teardown</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks5</td>
+<td></td>
+<td>-1585662720</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks5@12d4bf7e</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks6.teardown()'><b>teardown</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks6</td>
+<td></td>
+<td>-1585662720</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks6@4c1d9d4b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks5.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks5</td>
+<td><div><pre>org.testng.TestNGException: 
+Method public void test.CarNbike.TestSuite.UrlTestBrokenlinks5.code(java.lang.String) throws java.lang.Exception requires a @DataProvider named : urldata5
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1876518169", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1876518169'><pre>org.testng.TestNGException: 
+Method public void test.CarNbike.TestSuite.UrlTestBrokenlinks5.code(java.lang.String) throws java.lang.Exception requires a @DataProvider named : urldata5
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:580)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:795)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks5@12d4bf7e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks1.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks1<br>Parameters:  http://auto.ndtv.com/</td>
+<td></td>
+<td>111</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks1@3b07a0d6</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks1.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks1<br>Parameters: http://auto.ndtv.com/new-cars/cars-under-3-lakh</td>
+<td></td>
+<td>90</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks1@3b07a0d6</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks1.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks1<br>Parameters: http://auto.ndtv.com/new-cars/cars-under-4-lakh</td>
+<td></td>
+<td>55</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks1@3b07a0d6</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks1.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks1<br>Parameters: http://auto.ndtv.com/new-cars/cars-between-5-to-10-lakh</td>
+<td></td>
+<td>94</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks1@3b07a0d6</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks1.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks1<br>Parameters: http://auto.ndtv.com/new-cars/cars-between-10-to-20-lakh</td>
+<td></td>
+<td>86</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks1@3b07a0d6</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks1.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks1<br>Parameters: http://auto.ndtv.com/new-cars/cars-between-20-to-50-lakh</td>
+<td></td>
+<td>88</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks1@3b07a0d6</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks1.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks1<br>Parameters: http://auto.ndtv.com/new-cars/petrol-cars</td>
+<td></td>
+<td>74</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks1@3b07a0d6</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks1.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks1<br>Parameters: http://auto.ndtv.com/new-cars/diesel-cars</td>
+<td></td>
+<td>74</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks1@3b07a0d6</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks1.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks1<br>Parameters: http://auto.ndtv.com/new-cars/hatchback-cars</td>
+<td></td>
+<td>81</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks1@3b07a0d6</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks1.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks1<br>Parameters: http://auto.ndtv.com/new-cars/sedan-cars</td>
+<td></td>
+<td>110</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks1@3b07a0d6</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks1.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks1<br>Parameters: http://auto.ndtv.com/new-cars/suv-cars</td>
+<td></td>
+<td>115</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks1@3b07a0d6</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks1.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks1<br>Parameters: http://auto.ndtv.com/compare-bikes/honda-activa-6g-1626-vs-honda-activa-5g-1400</td>
+<td></td>
+<td>73</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks1@3b07a0d6</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks2.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks2<br>Parameters: http://auto.ndtv.com/new-bikes/popular-bike-models</td>
+<td></td>
+<td>156</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks2@11a9e7c8</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks2.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks2<br>Parameters: http://auto.ndtv.com/used/bikes-for-sale</td>
+<td></td>
+<td>83</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks2@11a9e7c8</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks2.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks2<br>Parameters: http://auto.ndtv.com/new-cars/suv-cars</td>
+<td></td>
+<td>94</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks2@11a9e7c8</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks2.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks2<br>Parameters: http://auto.ndtv.com/used/sell-bikes</td>
+<td></td>
+<td>36</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks2@11a9e7c8</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks2.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks2<br>Parameters: http://auto.ndtv.com/new-cars/diesel-cars</td>
+<td></td>
+<td>90</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks2@11a9e7c8</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks2.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks2<br>Parameters: http://auto.ndtv.com/new-bikes/launches</td>
+<td></td>
+<td>118</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks2@11a9e7c8</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks2.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks2<br>Parameters: http://auto.ndtv.com/new-cars/cars-between-10-to-20-lakh</td>
+<td></td>
+<td>85</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks2@11a9e7c8</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks2.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks2<br>Parameters: http://auto.ndtv.com/new-cars/sedan-cars</td>
+<td></td>
+<td>119</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks2@11a9e7c8</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks2.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks2<br>Parameters: http://auto.ndtv.com/new-cars/petrol-cars</td>
+<td></td>
+<td>92</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks2@11a9e7c8</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks2.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks2<br>Parameters: http://auto.ndtv.com/new-cars/cars-under-3-lakh</td>
+<td></td>
+<td>68</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks2@11a9e7c8</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks2.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks2<br>Parameters: http://auto.ndtv.com/new-bikes</td>
+<td></td>
+<td>66</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks2@11a9e7c8</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks2.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks2<br>Parameters: http://auto.ndtv.com/new-cars/hatchback-cars</td>
+<td></td>
+<td>116</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks2@11a9e7c8</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks2.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks2<br>Parameters: http://auto.ndtv.com/new-cars/cars-between-5-to-10-lakh</td>
+<td></td>
+<td>106</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks2@11a9e7c8</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks2.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks2<br>Parameters: http://auto.ndtv.com/new-cars/cars-between-20-to-50-lakh</td>
+<td></td>
+<td>87</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks2@11a9e7c8</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks3.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks3<br>Parameters: http://auto.ndtv.com/new-cars/popular-car-models</td>
+<td></td>
+<td>137</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks3@3901d134</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks3.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks3<br>Parameters: http://auto.ndtv.com/used/want-cars</td>
+<td></td>
+<td>113</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks3@3901d134</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks3.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks3<br>Parameters: http://auto.ndtv.com/used/cars-for-sale</td>
+<td></td>
+<td>55</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks3@3901d134</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks3.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks3<br>Parameters: http://auto.ndtv.com/compare-cars</td>
+<td></td>
+<td>96</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks3@3901d134</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks3.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks3<br>Parameters: http://auto.ndtv.com/used/sell-cars</td>
+<td></td>
+<td>34</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks3@3901d134</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks3.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks3<br>Parameters: http://auto.ndtv.com/new-cars/models</td>
+<td></td>
+<td>130</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks3@3901d134</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks3.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks3<br>Parameters: http://auto.ndtv.com/used</td>
+<td></td>
+<td>46</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks3@3901d134</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks3.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks3<br>Parameters: http://auto.ndtv.com/new-cars</td>
+<td></td>
+<td>50</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks3@3901d134</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks3.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks3<br>Parameters: http://auto.ndtv.com/bmw-cars</td>
+<td></td>
+<td>113</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks3@3901d134</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks3.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks3<br>Parameters: http://auto.ndtv.com/audi-cars</td>
+<td></td>
+<td>83</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks3@3901d134</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks3.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks3<br>Parameters: http://auto.ndtv.com/hyundai-cars</td>
+<td></td>
+<td>79</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks3@3901d134</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks3.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks3<br>Parameters: http://auto.ndtv.com/maruti-suzuki-cars</td>
+<td></td>
+<td>106</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks3@3901d134</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks3.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks3<br>Parameters: http://auto.ndtv.com/car-dealers/mahindra</td>
+<td></td>
+<td>416</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks3@3901d134</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks3.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks3<br>Parameters: http://auto.ndtv.com/car-dealers/maruti-suzuki</td>
+<td></td>
+<td>374</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks3@3901d134</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks4.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks4<br>Parameters: http://auto.ndtv.com/used/maruti-suzuki-alto-cars-in-mysore-45508-296d9</td>
+<td></td>
+<td>54</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks4@14d3bc22</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks4.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks4<br>Parameters: http://auto.ndtv.com/used/hatchback-cars</td>
+<td></td>
+<td>39</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks4@14d3bc22</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks4.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks4<br>Parameters: http://auto.ndtv.com/car-dealers/land-rover/hyderabad</td>
+<td></td>
+<td>106</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks4@14d3bc22</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks4.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks4<br>Parameters: http://auto.ndtv.com/audi-cars/a6</td>
+<td></td>
+<td>74</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks4@14d3bc22</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks4.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks4<br>Parameters: http://auto.ndtv.com/car-dealers/audi/hyderabad</td>
+<td></td>
+<td>91</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks4@14d3bc22</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks4.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks4<br>Parameters: http://auto.ndtv.com/car-dealers/audi/chandigarh</td>
+<td></td>
+<td>67</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks4@14d3bc22</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks4.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks4<br>Parameters: http://auto.ndtv.com/car-dealers/skoda/pune</td>
+<td></td>
+<td>88</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks4@14d3bc22</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks4.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks4<br>Parameters: http://auto.ndtv.com/mercedes-benz-cars</td>
+<td></td>
+<td>150</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks4@14d3bc22</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks4.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks4<br>Parameters: http://auto.ndtv.com/car-dealers/audi/mumbai</td>
+<td></td>
+<td>77</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks4@14d3bc22</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks4.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks4<br>Parameters: http://auto.ndtv.com/jaguar-cars/xj</td>
+<td></td>
+<td>56</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks4@14d3bc22</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks4.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks4<br>Parameters: http://auto.ndtv.com/jaguar-cars</td>
+<td></td>
+<td>56</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks4@14d3bc22</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks4.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks4<br>Parameters: http://auto.ndtv.com/car-dealers/tata/hyderabad</td>
+<td></td>
+<td>93</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks4@14d3bc22</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks4.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks4<br>Parameters: http://auto.ndtv.com/car-dealers/isuzu/pune</td>
+<td></td>
+<td>81</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks4@14d3bc22</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks4.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks4<br>Parameters: http://auto.ndtv.com/car-dealers/tata/new-delhi</td>
+<td></td>
+<td>62</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks4@14d3bc22</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks6.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks6<br>Parameters: http://auto.ndtv.com/car-dealers/jaguar/gurgaon</td>
+<td></td>
+<td>72</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks6@4c1d9d4b</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks6.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks6<br>Parameters: http://auto.ndtv.com/car-dealers/jaguar/chennai</td>
+<td></td>
+<td>63</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks6@4c1d9d4b</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks6.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks6<br>Parameters: http://auto.ndtv.com/car-dealers/toyota/pune</td>
+<td></td>
+<td>101</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks6@4c1d9d4b</td></tr>
+<tr>
+<td title='test.CarNbike.TestSuite.UrlTestBrokenlinks6.code()'><b>code</b><br>Test class: test.CarNbike.TestSuite.UrlTestBrokenlinks6<br>Parameters: http://auto.ndtv.com/car-dealers/nissan/gurgaon</td>
+<td></td>
+<td>92</td>
+<td>test.CarNbike.TestSuite.UrlTestBrokenlinks6@4c1d9d4b</td></tr>
+</table><p>
+</body>
+</html>
