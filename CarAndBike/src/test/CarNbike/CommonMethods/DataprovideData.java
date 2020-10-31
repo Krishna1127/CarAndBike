@@ -153,7 +153,7 @@ public class DataprovideData {
 	@DataProvider(name="excelData")
 	    public Iterator<String> gettestdata() throws Exception{
 	    	
-	    	ArrayList<String> testdata=utils.readExcel("C:\\Users\\mfcwl1\\Desktop\\CarnBike\\Urls\\Sitemap1.xls");
+	    	ArrayList<String> testdata=utils.readExcel("C:\\Users\\mfcwl1\\Desktop\\urlprod.xls");
 	    	return testdata.iterator();
 	    }
 	    }	    

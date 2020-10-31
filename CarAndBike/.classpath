@@ -70,5 +70,37 @@
 	<classpathentry kind="lib" path="C:/Users/mfcwl1/Desktop/MFCWL/jars/poi-ooxml-schemas-3.15.jar"/>
 	<classpathentry kind="lib" path="C:/Users/mfcwl1/Desktop/MFCWL/jars/poi-ooxml-schemas-3.15-beta1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/mfcwl1/Desktop/MFCWL/jars/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mfcwl1/Downloads/javax.mail.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mfcwl1/Downloads/smtp-1.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mfcwl1/.m2/repository/javax/mail/mail/1.4/mail-1.4.jar" sourcepath="C:/Users/mfcwl1/.m2/repository/javax/mail/mail/1.4/mail-1.4-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="javax.mail"/>
+			<attribute name="maven.artifactId" value="mail"/>
+			<attribute name="maven.version" value="1.4"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/mfcwl1/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar" sourcepath="C:/Users/mfcwl1/.m2/repository/javax/activation/activation/1.1/activation-1.1-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="javax.activation"/>
+			<attribute name="maven.artifactId" value="activation"/>
+			<attribute name="maven.version" value="1.1"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/mfcwl1/Desktop/MFCWL/jars/Extentjars/bson-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mfcwl1/Desktop/MFCWL/jars/Extentjars/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mfcwl1/Desktop/MFCWL/jars/Extentjars/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mfcwl1/Desktop/MFCWL/jars/Extentjars/extentreports-3.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mfcwl1/Desktop/MFCWL/jars/Extentjars/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mfcwl1/Desktop/MFCWL/jars/Extentjars/gson-2.8.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mfcwl1/Desktop/MFCWL/jars/Extentjars/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mfcwl1/Desktop/MFCWL/jars/Extentjars/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mfcwl1/Desktop/MFCWL/jars/Extentjars/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mfcwl1/Desktop/MFCWL/jars/Extentjars/jsoup-1.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mfcwl1/Desktop/MFCWL/jars/Extentjars/mongodb-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mfcwl1/Desktop/MFCWL/jars/Extentjars/mongodb-driver-core-3.3.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,9 +1,15 @@
 package test.CarNbike.BaseClass;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
@@ -38,6 +44,22 @@ public static WebDriver driver;
 
 	public static void Wait() throws Exception {
 		Thread.sleep(2000);
+	}
+	public static void WriteData(int row,int col,String Value) throws Exception {
+		File f=new File("C:\\Users\\mfcwl1\\Desktop\\CarnBike\\Report\\testreport.xlsx");
+		FileInputStream fis=new FileInputStream(f);
+		XSSFWorkbook book=new XSSFWorkbook();
+		XSSFSheet sheet=book.getSheet("Sheet1");
+		 Row rw= sheet.getRow(row);
+			Cell cl=rw.createCell(col);
+		        
+		//	cl.setCellType(CellType.STRING);
+		        
+			cl.setCellValue(Value);
+			FileOutputStream fos=new FileOutputStream(f);
+			book.write(fos);
+			fos.close();
+		
 	}
 	public static void LaunchBrowser(String BrowserName) {
 		

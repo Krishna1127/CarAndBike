@@ -52,14 +52,14 @@ public class utils extends TestBase{
 	 public static ArrayList<String> readExcel(String filepath) throws  IOException {
 		 FileInputStream file= new FileInputStream(filepath);
 	      HSSFWorkbook workbook=new HSSFWorkbook(file);
-	        HSSFSheet sheet = workbook.getSheet("Sheet1");
+	        HSSFSheet sheet = workbook.getSheet("Sheet2");
 	        HSSFCell row=sheet.getRow(0).getCell(0);
 	     
 	        Iterator<Row> rowit=sheet.iterator();
 	        ArrayList<String> list=new ArrayList<String>();
 	        while(rowit.hasNext()) {
 	        
-	        	list.add(rowit.next().getCell(1).getStringCellValue());
+	        	list.add(rowit.next().getCell(0).getStringCellValue());
 	        	 
 	     	}
 	        	

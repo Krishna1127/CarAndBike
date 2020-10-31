@@ -24,7 +24,7 @@ public class BrokenLinkTest extends TestBase{
 	}
 	
 	 	 
-@Test(dataProvider="urllist7",dataProviderClass=DataprovideData.class)
+@Test(dataProvider="excelData",dataProviderClass=DataprovideData.class)
 public void code(String data) throws Exception {
 	
 	 driver.get(data);
