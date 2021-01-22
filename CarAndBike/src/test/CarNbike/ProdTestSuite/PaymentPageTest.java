@@ -1,5 +1,7 @@
 package test.CarNbike.ProdTestSuite;
 
+import java.util.concurrent.TimeUnit;
+
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -24,6 +26,7 @@ public class PaymentPageTest extends TestBase{
 	}
 	@Test
 	public void code() throws Exception {
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		ProdTestCommon.Location();
 		
 		ProdTestCommon.search("Ampere");

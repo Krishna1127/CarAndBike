@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.CarNbike.ProdTestSuite.PaymentPageTest">
+      <class name="test.CarNbike.ProdTestSuite.LinkTest">
         <methods>
+          <include name="code" invocation-numbers="1804"/>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="code"/>
         </methods>
-      </class> <!-- test.CarNbike.ProdTestSuite.PaymentPageTest -->
+      </class> <!-- test.CarNbike.ProdTestSuite.LinkTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

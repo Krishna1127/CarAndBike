@@ -50,7 +50,7 @@ driver.findElement(By.xpath("//*[@id=\"ul-global-nav\"]/li[15]/span/span")).clic
 		Wait();
 		Wait();
 		Wait();
-		driver.findElement(By.xpath("//*[@id=\"1\"]/ul/li[1]")).click();
+		driver.findElement(By.xpath("//button[contains(text(),'Pay Now ₹ 999')]")).click();
 		Wait();
 		
 	}
